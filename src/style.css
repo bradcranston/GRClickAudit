@@ -1,45 +1,49 @@
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  color: #000;
-  background-color: #fff;
-  margin: 10;
-  overflow: hidden;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #f8f9fa;
 }
-
-p{
-  color:#282828;
-  font-size: 16px;
-}
-
 
 h1 {
-  background-color:#006690;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin: 0 0 10px;
+  text-align: center;
 }
 
-.tintedBlackLeft {
-  background-color:#00000033;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.2;
-  padding:11px 11px 11px 0px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 button {
-  padding: 5px 9px 5px 9px;
-  border-radius: 3px;
-  font-size: 18px;
-  border: 1px solid #0091CE;
-  background-color: #0091CE;
-  color: #fff;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+th.sortable {
+  cursor: pointer;
+}
+th.sortable:hover {
+  text-decoration: underline;
 }
